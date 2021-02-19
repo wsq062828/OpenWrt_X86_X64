@@ -75,7 +75,7 @@ jobs:
       run: |
         [ -e files ] && mv files $OPENWRTROOT/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE $OPENWRTROOT/.config
-        cat configs/lean/lean.config >> $OPENWRTROOT/.config
+        #cat configs/lean/lean.config >> $OPENWRTROOT/.config
         chmod +x scripts/*.sh
         cd $OPENWRTROOT
         ../$DIY_SH
