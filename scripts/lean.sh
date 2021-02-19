@@ -107,12 +107,6 @@ pushd package/lean
 svn co https://github.com/immortalwrt/immortalwrt/trunk/package/lean/pandownload-fake-server
 popd
 
-# Add driver for rtl8821cu & rtl8812au-ac
-pushd package/lean
-svn co https://github.com/immortalwrt/immortalwrt/branches/master/package/ctcgfw/rtl8812au-ac
-svn co https://github.com/immortalwrt/immortalwrt/branches/master/package/ctcgfw/rtl8821cu
-popd
-
 # Add rtl88x2bu
 pushd package/lean
 svn co https://github.com/immortalwrt/immortalwrt/branches/master/package/ctcgfw/rtl88x2bu
