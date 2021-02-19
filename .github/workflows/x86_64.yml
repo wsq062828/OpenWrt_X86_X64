@@ -88,11 +88,11 @@ jobs:
         cd $OPENWRTROOT
         if "$KMODS_IN_FIRMWARE" = 'true'
         then
-            #echo "CONFIG_ALL_KMODS=y" >> .config
+            echo "CONFIG_ALL_KMODS=y" >> .config
         fi
         make defconfig
-        ../scripts/modify_config.sh
-        cat .config
+        #../scripts/modify_config.sh
+        #cat .config
         make download -j8
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
